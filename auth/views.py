@@ -4,7 +4,7 @@ from django.http import HttpResponse
 # Create your views here.
 
 def home(request):
-    return HttpResponse("Welcome to Signin test app !")
+    return render(request,"auth/index.html")
 
 def signup(request):
     return render(request,"auth/signup.html")
