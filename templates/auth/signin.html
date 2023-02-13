@@ -9,20 +9,13 @@
 <body>
     <h2>Sign In</h2>
 
-    <form action="">
+    <form action="/signin/" method="post">
+        {% csrf_token %}
         <label for="">Username</label>
-        <input type="text" id="username" name="username" placeholder="Create an username" required>
-        <label for="">First Name</label>
-        <input type="text" id="username" name="username" placeholder="Create an username" required>
-        <label for="">Last Name</label>
-        <input type="text" id="username" name="username" placeholder="Create an username" required>
-        <label for="">Email Address</label>
-        <input type="text" id="username" name="username" placeholder="Create an username" required>
+        <input type="text" id="username" name="username" placeholder=" Enter username" required><br>
         <label for="">Password</label>
-        <input type="text" id="username" name="username" placeholder="Create an username" required>
-        <label for="">Confirm Password</label>
-        <input type="text" id="username" name="username" placeholder="Create an username" required>
-
+        <input type="text" id="password" name="password" placeholder="Enter password" required><br>
+        <button type="submit">SignIn</button>
     </form>
 </body>
 </html>
