@@ -5,3 +5,12 @@ from django.http import HttpResponse
 
 def home(request):
     return HttpResponse("Welcome to Signin test app !")
+
+def signup(request):
+    return render(request,"auth/signup.html")
+
+def signin(request):
+    return render(request,"auth/signin.html")
+
+def signout(request):
+    pass
